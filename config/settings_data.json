@@ -1951,7 +1951,7 @@
           "aspect_ratio": true,
           "img_size": "",
           "space_product": "10",
-          "limit": "4",
+          "limit": "13",
           "columns": "4",
           "collection_alternative_image": true,
           "collection_product_category": true,
