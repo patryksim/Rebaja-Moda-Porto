@@ -1644,7 +1644,7 @@
               "background_image_use": "1",
               "image": "shopify:\/\/shop_images\/jeans_izod.jpg",
               "image_use": "0",
-              "lazy_back_color": "#eee",
+              "lazy_back_color": "#eeeeee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/izod",
               "content": "<div class=\"porto-ultimate-content-box has-content-pos justify-content-center align-items-center\">\n  <div class=\"porto-container inner-30 inner-lg-45 container\">\n    <div class=\"vc_row wpb_row vc_inner row\">\n      <div class=\"pl-4 vc_column_container col-md-9 col-xl-7 offset-lg-1 col-lg-8 col-12\">\n        <div class=\"wpb_wrapper vc_column-inner\">\n           <div class=\"mb-0 d-inline-block\">\n            <button class=\"btn btn-modern btn-xl btn-light\"><a href=\"https:\/\/rebajamoda.com\/collections\/izod\">Compra ahora<\/a> <i class=\"icon-long-arrow-alt-right\"><\/i><\/button>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
@@ -2258,9 +2258,9 @@
           "dba5ef6f-4626-472c-a023-1013faaf4b62": {
             "type": "image",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/banner-main.png",
+              "background_image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB.jpg",
               "background_image_use": "1",
-              "image": "shopify:\/\/shop_images\/banner-main.png",
+              "image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB.jpg",
               "image_use": "0",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
@@ -2300,7 +2300,6 @@
           "fc57a92e-4ee8-4af3-9ad0-8b5307dbecfe": {
             "type": "image",
             "settings": {
-              "banner_image": "shopify:\/\/shop_images\/Gift-card.png",
               "banner_link": "shopify:\/\/products\/rebaja-moda-tarjeta-de-regalo",
               "banner_title": "Giftcard Rebaja Moda",
               "banner_content": "Regala una giftcard de Adams y esa persona que quieres podrá comprar lo que ella desee!"
