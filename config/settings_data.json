@@ -1641,9 +1641,9 @@
             "type": "image",
             "settings": {
               "background_image": "shopify:\/\/shop_images\/jeans_izod.jpg",
-              "background_image_use": "1",
+              "background_image_use": "0",
               "image": "shopify:\/\/shop_images\/jeans_izod.jpg",
-              "image_use": "0",
+              "image_use": "1",
               "lazy_back_color": "#eee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/izod",
