@@ -2260,9 +2260,9 @@
           "dba5ef6f-4626-472c-a023-1013faaf4b62": {
             "type": "image",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB.jpg",
+              "background_image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB_2.jpg",
               "background_image_use": "1",
-              "image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB.jpg",
+              "image": "shopify:\/\/shop_images\/REBAJAMODA_PORTADA_WEB_2.jpg",
               "image_use": "0",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
