@@ -1626,14 +1626,28 @@
           "f12146d8-1597-4768-9097-68799b70cd44": {
             "type": "image",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/Banner_Mark_and_me.jpg",
+              "background_image": "shopify:\/\/shop_images\/levis_tshirt_16.99.jpg",
               "background_image_use": "1",
-              "image": "shopify:\/\/shop_images\/Banner_Mark_and_me.jpg",
+              "image": "shopify:\/\/shop_images\/levis_tshirt_16.99.jpg",
               "image_use": "0",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
-              "link_slider": "",
+              "link_slider": "shopify:\/\/collections\/levis",
               "content": "<div class=\"porto-ultimate-content-box has-content-pos justify-content-center align-items-center\">\n  <div class=\"porto-container inner-30 inner-lg-45 container\">\n    <div class=\"vc_row wpb_row vc_inner row\">\n      <div class=\"pl-4 vc_column_container col-md-9 col-xl-7 offset-lg-1 col-lg-8 col-12\">\n        <div class=\"wpb_wrapper vc_column-inner\">\n         \n          \n           <div class=\"mb-0 d-inline-block\">\n            <button class=\"btn btn-modern btn-xl btn-light\"><a href=\"https:\/\/rebajamoda.com\/collections\/mark-me\">Compra ahora<\/a> <i class=\"icon-long-arrow-alt-right\"><\/i><\/button>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
+              "extra_class": ""
+            }
+          },
+          "52c07c4f-0f74-41d3-8b03-99468fd110d8": {
+            "type": "image",
+            "settings": {
+              "background_image": "shopify:\/\/shop_images\/jeans_izod.jpg",
+              "background_image_use": "0",
+              "image": "shopify:\/\/shop_images\/jeans_izod.jpg",
+              "image_use": "0",
+              "lazy_back_color": "#eee",
+              "show_content": true,
+              "link_slider": "shopify:\/\/collections\/izod",
+              "content": "",
               "extra_class": ""
             }
           }
@@ -1641,7 +1655,8 @@
         "block_order": [
           "0f9610e0-6e60-4900-aa42-d8eaccf6536f",
           "aaf73ca9-1a65-4be2-9b4e-48a5cf6f1155",
-          "f12146d8-1597-4768-9097-68799b70cd44"
+          "f12146d8-1597-4768-9097-68799b70cd44",
+          "52c07c4f-0f74-41d3-8b03-99468fd110d8"
         ],
         "custom_css": [
           "button.btn.btn-modern.btn-xl.btn-light {background-color: white; border-radius: 100px; color: white; border: black;}",
