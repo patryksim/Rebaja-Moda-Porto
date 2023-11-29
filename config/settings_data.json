@@ -2251,7 +2251,7 @@
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/todos-los-productos",
               "content": "<div class=\"position-absolute bottom-0 start-50 translate-middle-x\">\n\t<button>\n\t\tSHOP NOW\n\t<\/button>\n<\/div>",
-              "extra_class": ".porto-ultimate-content-box.has-content-pos { position: relative}"
+              "extra_class": ".content-slideshow{ position: relative}"
             }
           }
         },
