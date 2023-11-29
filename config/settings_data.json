@@ -2250,7 +2250,7 @@
               "lazy_back_color": "#eeeeee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/todos-los-productos",
-              "content": "<div class=\"position-relative w-100\" style=\"height: 320px;\">\n\t<div class=\"position-absolute bottom-0 start-50 translate-middle-x\">\n\t\t<button class=\"btn-main-banner\">\n\t\t\tSHOP NOW\n\t\t<\/button>\n\t<\/div>\n<\/div>",
+              "content": "<div class=\"position-relative w-100\" style=\"height: 400px;\">\n\t<div class=\"position-absolute bottom-0 start-50 translate-middle-x\">\n\t\t<a href=\"\/collections\/todos-los-productos\">\n\t\t\t<button class=\"btn-main-banner\">\n\t\t\t\tSHOP NOW\n\t\t\t<\/button>\t\t\n\t\t<\/a>\n\t<\/div>\n<\/div>",
               "extra_class": ".content-slideshow{ position: relative}"
             }
           }
