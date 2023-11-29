@@ -1613,9 +1613,9 @@
             "type": "image",
             "settings": {
               "background_image": "shopify:\/\/shop_images\/camisas_mark_and_me.jpg",
-              "background_image_use": "1",
+              "background_image_use": "0",
               "image": "shopify:\/\/shop_images\/camisas_mark_and_me.jpg",
-              "image_use": "0",
+              "image_use": "1",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/mark-me",
@@ -1627,9 +1627,9 @@
             "type": "image",
             "settings": {
               "background_image": "shopify:\/\/shop_images\/levis_tshirt_16.99.jpg",
-              "background_image_use": "1",
+              "background_image_use": "0",
               "image": "shopify:\/\/shop_images\/levis_tshirt_16.99.jpg",
-              "image_use": "0",
+              "image_use": "1",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/levis",
