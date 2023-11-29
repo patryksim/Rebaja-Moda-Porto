@@ -2243,9 +2243,9 @@
           "dba5ef6f-4626-472c-a023-1013faaf4b62": {
             "type": "image",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/Main_Banner.jpg",
+              "background_image": "shopify:\/\/shop_images\/banner-main.png",
               "background_image_use": "1",
-              "image": "shopify:\/\/shop_images\/Main_Banner.jpg",
+              "image": "shopify:\/\/shop_images\/banner-main.png",
               "image_use": "0",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
