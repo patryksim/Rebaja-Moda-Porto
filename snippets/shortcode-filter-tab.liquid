@@ -1,0 +1,71 @@
+{%- capture tab_style -%}{%- include 'shortcode-render' render:'tab_style' -%}{%- endcapture -%}
+{%- capture filter_title -%}{%- include 'shortcode-render' render:'filter_title' -%}{%- endcapture -%}
+{%- capture limit -%}{%- include 'shortcode-render' render:'limit' -%}{%- endcapture -%}
+{%- capture columns -%}{%- include 'shortcode-render' render:'columns' -%}{%- endcapture -%}
+{%- capture show_discount -%}{%- include 'shortcode-render' render:'show_discount' -%}{%- endcapture -%}
+{%- capture show_sale -%}{%- include 'shortcode-render' render:'show_sale' -%}{%- endcapture -%}
+{%- capture sale_label_text -%}{%- include 'shortcode-render' render:'sale_label_text' -%}{%- endcapture -%}
+{%- capture alternative_image -%}{%- include 'shortcode-render' render:'alternative_image' -%}{%- endcapture -%}
+{%- capture show_grid_quickview -%}{%- include 'shortcode-render' render:'show_grid_quickview' -%}{%- endcapture -%}
+{%- capture show_product_category -%}{%- include 'shortcode-render' render:'show_product_category' -%}{%- endcapture -%}
+{%- capture show_rating_star -%}{%- include 'shortcode-render' render:'show_rating_star' -%}{%- endcapture -%}
+{%- capture show_product_price -%}{%- include 'shortcode-render' render:'show_product_price' -%}{%- endcapture -%}
+{%- capture grid_swatch_type -%}{%- include 'shortcode-render' render:'grid_swatch_type' -%}{%- endcapture -%}
+{%- capture show_addtocart -%}{%- include 'shortcode-render' render:'show_addtocart' -%}{%- endcapture -%}
+{%- capture show_addtolinks -%}{%- include 'shortcode-render' render:'show_addtolinks' -%}{%- endcapture -%}
+{%- capture aspect_ratio -%}{%- include 'shortcode-render' render:'aspect_ratio' -%}{%- endcapture -%}
+{%- capture img_size -%}{%- include 'shortcode-render' render:'img_size' -%}{%- endcapture -%}
+{%- capture product_layout -%}{%- include 'shortcode-render' render:'product_layout' -%}{%- endcapture -%}
+{%- capture space_product -%}{%- include 'shortcode-render' render:'space_product' -%}{%- endcapture -%}
+{%- capture view_mode -%}{%- include 'shortcode-render' render:'view_mode' -%}{%- endcapture -%}
+{%- capture show_nav -%}{%- include 'shortcode-render' render:'show_nav' -%}{%- endcapture -%}
+{%- capture show_paging -%}{%- include 'shortcode-render' render:'show_paging' -%}{%- endcapture -%}
+{%- capture nav_side -%}{%- include 'shortcode-render' render:'nav_side' -%}{%- endcapture -%}
+{%- capture nav_type -%}{%- include 'shortcode-render' render:'nav_type' -%}{%- endcapture -%}
+{%- capture show_nav_hover -%}{%- include 'shortcode-render' render:'show_nav_hover' -%}{%- endcapture -%}
+{%- capture autoplay -%}{%- include 'shortcode-render' render:'autoplay' -%}{%- endcapture -%}
+{%- capture total -%}{%- include 'shortcode-render' render:'total' -%}{%- endcapture -%}
+{% assign total_collection = total | plus: 0 %} 
+<div class="block-by-collection main-tab-products">
+  <div class="shop-by-collection tab-product-collection tab-{{tab_style}}{%if tab_style == 'style1' %} col-md-12{%endif%}">
+    {%- if total_collection.size > 0 -%}
+    <div class="col-md-2 collection-list">
+      {%- if filter_title != '' -%}
+      <span class="filter-title"> 
+        {{ filter_title }} 
+      </span>
+      {%- endif -%}
+      <div class="tab-selector">
+        <div class="tabs-navigation-wrapper">
+          <span class="open-title-menu"></span>
+          <ul class="nav products-tabs-title" role="tablist"> 
+            {%- for index_collection in (1..total_collection)  -%}  
+            {%- assign _title = 'title' | append: index_collection -%}
+            {%- assign _collection = 'collection' | append: index_collection -%}
+
+            {%- capture title %}{%- include 'shortcode-render' render:_title -%}{%- endcapture -%}
+            {%- capture collection_name %}{%- include 'shortcode-render' render:_collection -%}{%- endcapture -%}
+
+            {%- assign collection = collections[collection_name] -%}
+            <li class="nav-item{% if forloop.first %} active-tab-title{% endif %}" data-atts="{{collection.url}}?page=1&q=viewmode_{{view_mode}}+layout_{{product_layout}}+columns_{{columns}}+limit_{{limit}}+space_{{space_product}}+ratio_{{aspect_ratio}}+imgsize_{{img_size}}+show_discount_{{show_discount}}+show_sale_{{show_sale}}+sale_label_text_{{sale_label_text}}+alternative_image_{{alternative_image}}+show_grid_quickview_{{show_grid_quickview}}+show_product_category_{{show_product_category}}+show_rating_star_{{show_rating_star}}+show_product_price_{{show_product_price}}+grid_swatch_type_{{grid_swatch_type}}+show_addtocart_{{show_addtocart}}+show_addtolinks_{{show_addtolinks}}{% if view_mode == 'products-slider' %}+autoplay_{{autoplay}}+nav_{{show_nav}}+paging_{{show_paging}}+navpos_{{nav_position}}+navside_{{nav_side}}+navtype_{{nav_type}}+navhover_{{show_nav_hover}}{% endif %}&view=ajax_tab">
+              <a href="#" class="nav-link{% if forloop.index == 1%} active{% endif %}" data-toggle="tab"> 
+                {{ title }} 
+              </a>
+            </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 category-detail">
+      <div class="porto-tab-content porto-products">  
+        {%- for index_collection in (1..total_collection)  -%}  
+        {%- if forloop.first -%}
+        {%- include 'pt-tab-content' limit:limit, columns:columns, show_discount:show_discount, show_sale:show_sale, sale_label_text:sale_label_text, alternative_image:alternative_image, show_grid_quickview:show_grid_quickview,show_product_category:show_product_category, show_rating_star:show_rating_star, show_product_price:show_product_price, grid_swatch_type:grid_swatch_type, show_addtocart:show_addtocart, show_addtolinks:show_addtolinks, aspect_ratio:aspect_ratio, img_size:img_size, product_layout:product_layout, space_product:space_product, view_mode:view_mode, show_nav:show_nav, show_paging:show_paging, nav_position:nav_position, nav_side:nav_side, nav_type:nav_type, show_nav_hover:show_nav_hover, autoplay:autoplay -%}
+        {%- endif -%} 
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+</div>

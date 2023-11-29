@@ -1,0 +1,26 @@
+<div class="language-wrapper top-select">
+  <a href="javascript:void(0);" class="title">
+    <span class="current-language">
+      {% if settings.flag_user_icon %}
+        {% capture flag %}
+        {{localization.language.iso_code}}.png
+      {% endcapture%}
+      <img alt="" src="{{ flag | asset_url }}">
+      {% endif %}
+      {{ localization.language.endonym_name | capitalize }}
+    </span>
+    <i class="icon-angle-down"></i>
+  </a> 
+  {%- form 'localization', id: 'LanguageForm', class: 'localization-form' -%} 
+  <div class="select-language clearfix">
+    {%- for language in localization.available_languages -%}
+    <button type="submit" name="locale_code" class="item" data-action="select-language" value="{{ language.iso_code }}">
+      {% capture flag %}
+      {{language.iso_code}}.png
+      {% endcapture%}
+      {% if settings.flag_user_icon != blank %}<img src="{{ flag | asset_url }}"> {{ language.endonym_name | capitalize }}{% else %} {{ language.endonym_name | capitalize }}{% endif %}
+    </button> 
+    {%- endfor -%}
+  </div> 
+  {%- endform -%}
+</div> 

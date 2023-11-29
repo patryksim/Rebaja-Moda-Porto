@@ -1,0 +1,15 @@
+{%- if shop.enabled_currencies.size > 1 -%}
+<div class="currency-wrapper top-select">
+  <a href="javascript:void(0);" class="title">
+    <span class="current-currency">{{ cart.currency.iso_code }}</span>
+    <i class="icon-angle-down"></i>
+  </a>
+  {%- form 'localization', id: 'currency_form', class: 'currency-selector' -%}
+  <div class="setting-currency"> 
+    {%- for country in localization.available_countries -%}
+    <button type="submit" name="currency" class="item" data-action="select-currency" value="{{ country.currency.iso_code }}">{{ country.currency.iso_code }}</button>
+    {%- endfor -%}
+  </div> 
+  {%- endform -%}
+</div> 
+{%- endif -%}

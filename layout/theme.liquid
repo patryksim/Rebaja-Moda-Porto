@@ -1,0 +1,296 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="{{ request.locale.iso_code }}"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js" lang="{{ request.locale.iso_code }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="{{ request.locale.iso_code }}"> <!--<![endif]-->
+<head>
+
+
+  
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}" type="image/png" />
+  {%- if template contains 'index' -%}
+  {%- if page_title != blank and page_title != 'Welcome' -%}
+  <title>{{ page_title }}</title>
+  {%- else -%}
+  <title>{{ shop.name }}</title>
+  {%- endif -%}
+  {%- elsif template == '404' -%}
+  <title>Page Not Found - {{ shop.name }}</title>
+  {%- else -%}
+  <title>{{ page_title }} - {{ shop.name }}</title>
+  {%- endif -%}
+  {%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}" />
+  {%- endif -%}
+  <!-- Helpers ================================================== -->
+  {%- include 'social-meta-tags' -%}
+  <link rel="canonical" href="{{ canonical_url }}" />
+  {%- if settings.disable_responsive == 'no' -%}
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  {%- endif -%}
+  <meta name="theme-color" content="{{ settings.color_primary }}" />
+  <!-- CSS ==================================================+ -->
+  {% style %}
+  :root {
+    --theme-color: {{ settings.theme_color }};    
+    --basic-text-color: {{ settings.text_color }};
+    --basic-color-link: {{ settings.color_link }}; 
+    --select-bg-image: url({{ "select-bg.svg" | asset_url }});
+    {% if settings.basic_font == 'google'%}
+    --porto-body-ff: {{ settings.google_font }};
+    {% else %}
+    --porto-body-ff: {{ settings.family_font }};
+    {% endif %} 
+    --product-button-hover-color: {{settings.product_button_bg_hover}};
+    --button-quickview-color: {{settings.product_quickview_button_bg}};
+    --product-title-color: {{settings.product_title_color}};
+    --product-price-color: {{settings.product_price_color}};
+    --screen-normal: (max-width: 991px);
+    --screen-medium: (max-width: 767px);
+    --screen-small: (max-width: 575px);
+    --screen-x-small: (max-width: 484px); 
+    --color-white: #fff;
+    --color-black: #000;
+    --color-old-price: #a7a7a7; 
+    --hot-bg: #62b959;
+    --product-sale-bg: {{ settings.sale_label_background_color }};
+    --product-sale-text: {{ settings.sale_label_text_color }};
+    --font-weight-semilight: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;  
+    --price-slider-color: {{ settings.price_slider_color }};
+  }
+  {% endstyle %}
+  {{ 'plugins.css' | asset_url | stylesheet_tag }}
+  {{ 'ultramegamenu.css' | asset_url | stylesheet_tag }}
+  {{ 'styles.css' | asset_url | stylesheet_tag }}
+  {%- capture header_type %}header-{{settings.header_design}}.css{%- endcapture -%}
+  {{ header_type | asset_url | stylesheet_tag }} 
+  {%- if settings.background_color == 'dark' -%}
+  {{ 'dark.css' | asset_url | stylesheet_tag }}
+  {%- endif -%} 
+  {{ 'product-list.css' | asset_url | stylesheet_tag }}
+  {{ 'responsive.css' | asset_url | stylesheet_tag }} 
+  {{ 'config.css' | asset_url | stylesheet_tag }}
+  {%- if settings.layout == '1024px' -%}
+  {{ 'layout_1024.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+  {%- if settings.layout == '1280px' -%}
+  {{ 'layout_1280.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+  {%- if settings.layout == '1420px' -%}
+  {{ 'layout_1420.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+  {%- if settings.layout == 'full_width' -%}
+  {{ 'layout_full_width.css' | asset_url | stylesheet_tag }}
+  {%- endif -%}
+  {% comment %}
+  /**********************************************************
+  *                CSS PROPIO DE REBAJA MODA
+  *                 patricia.hung@chi.com.pa
+  **********************************************************/
+  {% endcomment %}
+  {{ 'rebaja-moda.css'  | asset_url | stylesheet_tag }} 
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}
+  {%- include 'oldIE-js' -%}
+  {{ 'vendor.js' | asset_url | script_tag }}
+  {%- if template contains 'customers' -%}
+  {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+  {%- endif -%}
+  {%- if template == 'collection' or template contains 'collection.' -%}
+  <script src="{{ 'shopify_common.js' | asset_url }}" async></script>
+  <script src="{{ 'jquery.history.min.js' | asset_url }}" async></script>
+  {%- endif -%}
+  <!-- Import custom fonts ====================================================== -->
+  {%- assign mandatory_fonts = "Open Sans, Popppins, Oswald, Shadows Into Light" -%}
+  {%- if settings.basic_font == 'google' -%}
+  {%- unless mandatory_fonts contains settings.google_font -%}
+  <link href="//fonts.googleapis.com/css?family={{ settings.google_font }}:200italic,300italic,400italic,600italic,700italic,800italic,700,200,300,600,800,400&amp;subset=cyrillic-ext,greek-ext,latin,latin-ext,cyrillic,greek,vietnamese" rel='stylesheet' type='text/css'>
+  {%- endunless -%}
+  {%- endif -%}
+  {%- if settings.heading_font == 'google' -%}
+  {%- unless mandatory_fonts contains settings.heading_google_font -%}
+  <link href="//fonts.googleapis.com/css?family={{ settings.heading_google_font }}:200italic,300italic,400italic,600italic,700italic,800italic,700,200,300,600,800,400&amp;subset=cyrillic-ext,greek-ext,latin,latin-ext,cyrillic,greek,vietnamese" rel='stylesheet' type='text/css'>
+  {%- endunless -%}
+  {%- endif -%}
+  {%- if settings.font_menu != '' -%}
+  {%- unless mandatory_fonts contains settings.font_menu -%}
+  <link href="//fonts.googleapis.com/css?family={{ settings.font_menu }}:200italic,300italic,400italic,500italic,600italic,700italic,800italic,700,200,300,600,800,400,500&amp;subset=cyrillic-ext,greek-ext,latin,latin-ext,cyrillic,greek,vietnamese" rel='stylesheet' type='text/css'>
+  {%- endunless -%}
+  {%- endif -%}
+  <script type="text/javascript"> 
+    var asset_url = '{{'/' | asset_url}}';
+    var routes_url = '{{ routes.root_url }}';
+    var money_format = '<span class="money">{{shop.money_format}}</span>'; 
+    
+   </script>
+    
+  <style>
+    {{settings.custom_style_1}}
+    {{settings.custom_style_2}}
+  </style>
+ 
+</head>
+<body id="{{ page_title | handle }}" class="{% if settings.new_style_css == 'yes' %}site-new-style{% endif %}{% if settings.header_fullwidth != blank %} header-full-width{% endif %}{% if settings.background_color == 'dark' %} dark{% endif %}{% if settings.layout == '1024px' %} layout-1024{% endif %}{% if settings.layout == '1280px' %} layout-1280{% endif %}{% if settings.layout == 'full_width' %} full-width{% endif %}{% if customer %} customer-logged-in{% endif %} template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if settings.boxed == 'boxed' %} boxed{% endif %}{% if settings.collection_flex_grid != blank %} collection-flex-grid{% endif %}{% if settings.header_sticky_enable == 'enable' %} enable-sticky-header{% endif %}">
+  <!-- begin site-header -->
+   
+  <div class="wrapper">
+    <div class="page">
+      {% include 'header' %}
+      <!-- //site-header -->
+      {%- if settings.page_header == 'yes' -%}
+      <div class="page-header"></div>
+      {%- endif -%}
+      <div class="main-container {% if template != 'index' and settings.collection_menu_onepage != blank %}onepage-category{% endif %}">
+        {%- if template != 'index' and settings.collection_menu_onepage != blank -%}
+        {% include 'onepage-link'%}
+        {%- endif -%}
+        <div class="main-wrapper">
+          <div class="main pt-main">
+            {{ content_for_layout }}
+          </div>
+        </div>
+      </div>
+      <!-- begin site-footer -->
+      <div class="box_footer">
+        {% section 'footer' %}
+      </div>
+      {% section 'sticky-footer-navbar' %}
+    </div>
+  </div>
+  <!-- //site-footer -->
+  {%- if template contains 'index' and settings.newsletter_enable == '1' -%}
+  {% include 'newsletter-popup' %}
+  {%- elsif settings.newsletter_enable == '2' -%}
+  {% include 'newsletter-popup' %}
+  {%- endif -%}
+  {% include 'box-popup' %}
+  <script type="text/javascript">
+    $("img").addClass('lazyload lazypreload');
+    document.addEventListener('lazybeforeunveil', function(e){
+      var lazy_bg = e.target.getAttribute('data-bg');
+      if(lazy_bg) {
+        e.target.style.backgroundImage = 'url(' + lazy_bg + ')';
+      }
+    });
+    var frontendData = {};
+    frontendData.enableCurrency = {{ settings.currency_enable }};
+    frontendData.ajax_search = {{settings.header_ajax_search}};
+    frontendData.search_by_collection = {{settings.header_search_colletion}};
+    frontendData.imageLazyLoad = {{settings.image_lazyload}};
+     
+    var cartData = {};
+    cartData.ajax_cart_use = {{settings.ajax_cart_use}};
+    cartData.shopping_cart_action = '{{settings.shopping_cart_action}}';
+    var wishlistData = {};
+    var compareData = {};
+    var obProductData = {};
+    obProductData.in_stock = '{{'products.product.in_stock' | t}}';
+    obProductData.out_of_stock = '{{'products.product.out_of_stock' | t}}';
+    obProductData.add_to_cart = '{{'products.product.add_to_cart' | t}}';
+    obProductData.sold_out = '{{'products.product.sold_out' | t}}';
+    cartData.removeItemLabel = '{{ 'cart.header.remove_this_item' | t }}';
+    cartData.totalLabel = '{{ 'cart.header.total' | t }}';
+    cartData.totalNumb = '{{ 'cart.header.total_numb' | t }}';
+    cartData.noItemLabel = '{{ 'cart.header.no_item' | t }}';
+    cartData.buttonViewCart = '{{ 'cart.header.view_cart' | t }}';
+    cartData.buttonCheckout = '{{ 'cart.header.checkout' | t }}';
+    window.inventory_text = {
+      in_stock: "{{ 'products.product.in_stock' | t }}",
+      many_in_stock: "{{ 'products.product.many_in_stock' | t }}",
+      out_of_stock: "{{ 'products.product.out_of_stock' | t }}",
+      add_to_cart: "{{ 'products.product.add_to_cart' | t }}",
+      sold_out: "{{ 'products.product.sold_out' | t }}"
+    };
+
+    window.date_text = {
+      year_text: "{{ 'general.date.year_text' | t }}",
+      month_text: "{{ 'general.date.month_text' | t }}",
+      week_text: "{{ 'general.date.week_text' | t }}",
+      day_text: "{{ 'general.date.day_text' | t }}",
+      year_singular_text: "{{ 'general.date.year_singular_text' | t }}",
+      month_singular_text: "{{ 'general.date.month_singular_text' | t }}",
+      week_singular_text: "{{ 'general.date.week_singular_text' | t }}",
+      day_singular_text: "{{ 'general.date.day_singular_text' | t }}",
+      hour_text: "{{ 'general.date.hour_text' | t }}",
+      min_text: "{{ 'general.date.min_text' | t }}",
+      sec_text: "{{ 'general.date.sec_text' | t }}",
+      hour_singular_text: "{{ 'general.date.hour_singular_text' | t }}",
+      min_singular_text: "{{ 'general.date.min_singular_text' | t }}",
+      sec_singular_text: "{{ 'general.date.sec_singular_text' | t }}"
+    };
+    wishlistData.wishlist = '{{'wish_list.general.wishlist' | t}}';
+    wishlistData.product = '{{'wish_list.general.product' | t}}';
+    wishlistData.instock = '{{ 'products.product.in_stock' | t }}';
+    wishlistData.outstock = '{{'products.product.out_of_stock' | t}}';
+    wishlistData.addtocart = '{{'products.product.add_to_cart' | t}}';
+    wishlistData.remove = '{{'wish_list.general.remove' | t}}';
+    wishlistData.no_item = '{{'wish_list.general.no_item' | t}}';
+    wishlistData.item_exist = '{{'wish_list.general.item_exist' | t}}';
+    wishlistData.item_added = '{{'wish_list.general.item_added' | t}}';
+    compareData.compare = '{{'compare_list.general.compare' | t}}';
+    compareData.product = '{{'compare_list.general.product' | t}}';
+    compareData.quantity = '{{'compare_list.general.quantity' | t}}';
+    compareData.options = '{{'compare_list.general.options' | t}}';
+    compareData.remove = '{{'compare_list.general.remove' | t}}';
+    compareData.no_item = '{{'compare_list.general.no_item' | t}}';
+    compareData.item_exist = '{{'compare_list.general.item_exist' | t}}';
+    compareData.item_added = '{{'compare_list.general.item_added' | t}}'; 
+  </script> 
+  {%- if settings.image_lazyload == blank -%}
+  <script>
+    $("img").removeClass('lazyload lazypreload').css("padding-top", "");
+    $("img").each(function() {
+      if($(this).data('src')) {
+        $(this).attr("src", $(this).data('src'));
+      }
+    });
+    $('.lazyload').each(function() {
+      $(this).removeClass('lazyload lazypreload');
+      var lazy_bgs = $(this).data('bg');
+      if(lazy_bgs){
+        $(this).css("background-image", 'url(' + lazy_bgs + ')');
+      }
+    });
+  </script>
+  {%- endif -%}
+  {{ 'theme-scripts.js' | asset_url | script_tag }} 
+  {{ "jquery.elevatezoom.min.js" | asset_url | script_tag }} 
+  <script src="{{ 'theme.js' | asset_url }}" async></script>
+  <script src="{{ 'api.jquery.js' | shopify_asset_url }}" async></script>
+  {{ 'option_selection.js' | asset_url | script_tag }}  
+  <script>
+    {% if newHash %}
+      $(function() {
+        form.updateHash('{{ newHash }}');
+      });
+    {% endif %}
+    {% if resetPassword %}
+      $(function() {
+        form.resetPasswordSuccess();
+      });
+    {% endif %}
+  </script>
+  {% include 'wishlist-modal' %}
+  {% include 'compare-modal' %}
+  {%- if settings.login_popup != blank -%}
+  {%- unless template contains 'customers' -%}
+  {% include 'login-popup' %}
+  {%- endunless -%}
+  {%- endif -%} 
+{% render 'appikon-discounts' %}
+</body>
+<script> 
+    if(document.getElementsByClassName('header-none').length > 0)
+    {
+      console.log("abc");
+      document.querySelector(".header-main").style.display = "block"
+    };
+     </script>
+</html>

@@ -1,0 +1,22 @@
+<div class="cart-design-{{settings.shopping_cart_design}} widget-design-{{settings.shopping_cart_widget_design}}">
+  <a href="javascript:;" class="icon-cart-header">
+    <i class="icon-cart"></i>
+    <span class="cart-total">
+      <span class="cart-qty">{{ cart.item_count }}</span><span>{{ 'cart.header.total_numb' | t }}</span>
+      <span class="cart-price"><span class="money">{{ cart.total_price | money }}</span></span>
+    </span> 
+    {% if settings.shopping_cart_design == '8' %}
+    <span class="cart-subtotal"> 
+      {{ 'cart.header.title' | t }}
+      <span class="cart-price"><span class="money">{{ cart.total_price | money }}</span></span>
+    </span>
+    {% endif %}
+  </a>
+  <div class="cart-wrapper theme-border-color">
+    <div class="cart-inner"> 
+      <div class="cart-inner-content">
+        {% include 'widget-shopping-cart' %}
+      </div>
+    </div>
+  </div>
+</div>
