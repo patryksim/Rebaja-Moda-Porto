@@ -1,1 +1,69 @@
-{"sections":{"breadcrumb":{"type":"breadcrumb","settings":{}},"main":{"type":"main-page","disabled":true,"settings":{}},"f62ce6d6-1fc2-4a7b-8791-51427c673a63":{"type":"text-section2","blocks":{"template--16099334389954__f62ce6d6-1fc2-4a7b-8791-51427c673a63-item-block-1":{"type":"item-block","settings":{"extra_class":"","column_width_desktop":"12","column_width_tablet":"12","column_width_mobile":"12","column_hidden_tablet":false,"column_hidden_mobile":false,"item_title":"TRABAJA CON NOSOTROS","item_icon":"","item_icon_position":"top","item_text":"<p>POR FAVOR ENVIAR SU HOJA DE VIDA AL CORREO ELECTRÓNICO <br><a href=\"mailto:rh2@grupoadams.com\"><b>rh2@grupoadams.com<\/b><\/a><\/p>","item_link_text":"","item_link":""}}},"block_order":["template--16099334389954__f62ce6d6-1fc2-4a7b-8791-51427c673a63-item-block-1"],"settings":{"bg_section_color":"#ffffff","margin_top":"","margin_bottom":"","section_padding":"","icon_color":"","icon_font_size":"14px","border_icon_color":"","bg_icon_color":"","title_color":"","text_color":"","button_bg_color":"","button_text_color":"","border_icon_radius":"100%","icon_width":"80px"}}},"order":["breadcrumb","main","f62ce6d6-1fc2-4a7b-8791-51427c673a63"]}
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "b61f1520-6263-44b0-8242-f2563e7bb584": {
+      "type": "section-html",
+      "settings": {
+        "title": "",
+        "html": "<a data-encoded-tag-name=\"script\" data-encoded-tag-value=\"\" data-encoded-attr-type=\"dGV4dCUyRmphdmFzY3JpcHQ=\" data-encoded-attr-src=\"aHR0cHMlM0ElMkYlMkZmb3JtLmpvdGZvcm0uY29tJTJGanNmb3JtJTJGMjIwODAzODQ4NjA1ODYx\"><\/a>"
+      }
+    },
+    "f62ce6d6-1fc2-4a7b-8791-51427c673a63": {
+      "type": "text-section2",
+      "blocks": {
+        "template--16099334389954__f62ce6d6-1fc2-4a7b-8791-51427c673a63-item-block-1": {
+          "type": "item-block",
+          "settings": {
+            "extra_class": "",
+            "column_width_desktop": "12",
+            "column_width_tablet": "12",
+            "column_width_mobile": "12",
+            "column_hidden_tablet": false,
+            "column_hidden_mobile": false,
+            "item_title": "TRABAJA CON NOSOTROS",
+            "item_icon": "",
+            "item_icon_position": "top",
+            "item_text": "<p>POR FAVOR ENVIAR SU HOJA DE VIDA AL CORREO ELECTRÓNICO <br><a href=\"mailto:rh2@grupoadams.com\"><b>rh2@grupoadams.com<\/b><\/a><\/p>",
+            "item_link_text": "",
+            "item_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16099334389954__f62ce6d6-1fc2-4a7b-8791-51427c673a63-item-block-1"
+      ],
+      "settings": {
+        "bg_section_color": "#ffffff",
+        "margin_top": "",
+        "margin_bottom": "",
+        "section_padding": "",
+        "icon_color": "",
+        "icon_font_size": "14px",
+        "border_icon_color": "",
+        "bg_icon_color": "",
+        "title_color": "",
+        "text_color": "",
+        "button_bg_color": "",
+        "button_text_color": "",
+        "border_icon_radius": "100%",
+        "icon_width": "80px"
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "b61f1520-6263-44b0-8242-f2563e7bb584",
+    "f62ce6d6-1fc2-4a7b-8791-51427c673a63"
+  ]
+}
