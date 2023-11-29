@@ -2249,7 +2249,7 @@
               "image_use": "0",
               "lazy_back_color": "#eeeeee",
               "show_content": true,
-              "link_slider": "shopify:\/\/collections\/all",
+              "link_slider": "shopify:\/\/collections\/todos-los-productos",
               "content": "<div class=\"porto-ultimate-content-box has-content-pos justify-content-center align-items-center\">\n  <div class=\"porto-container inner-30 inner-lg-45 container\">\n    <div class=\"vc_row wpb_row vc_inner row\">\n      <div class=\"pl-4 vc_column_container col-md-9 col-xl-7 offset-lg-1 col-lg-8 col-12\">\n        <div class=\"wpb_wrapper vc_column-inner\">\n          <h3 style=\"font-family: 'Poppins';\n\nfont-style: normal;\npadding-top:0px;\npadding-bottom:50px\nfont-weight: 400;\nfont-size: 18px;\nline-height: 27px;\n\/* identical to box height *\/\n\n\ncolor: #FFFFFF;\n\" class=\"vc_custom_heading mb-2 aclass=\" vc_custom_heading=\"\" mb-2=\"\" align-left=\"\">\nNueva colección <\/h3>\n         <h2 style=\"font-family: 'Graphit';\nfont-style: normal;\nfont-weight: 400;\nfont-size: 56px;\nline-height: 140%;\n\/* or 78px *\/\n\nletter-spacing: 0.06em;\ntext-transform: uppercase;color: #FFFFFF;\" class=\"vc_custom_heading coupon-sale-text mb-4 align-left\">\nModa Para \n<br>Todas<\/h2>\n         \n          \n          <div class=\"mb-0 d-inline-block\">\n            <button class=\"btn btn-modern btn-xl btn-light\"><a href=\"https:\/\/rebajamoda.com\/collections\/all\">Compra ahora<\/a> <i class=\"icon-long-arrow-alt-right\"><\/i><\/button>\n          <\/div>\n        <\/div>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>",
               "extra_class": ""
             }
