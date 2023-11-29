@@ -1915,7 +1915,7 @@
           "b40e7def-636f-4c0d-90f3-760d6d1f6c75-16844118593485cef9-0"
         ],
         "settings": {
-          "margin_top": "",
+          "margin_top": "40px",
           "margin_bottom": "0px",
           "padding": "0px 0px 0px 0px",
           "space_item": "0"
@@ -2050,7 +2050,7 @@
           "30987dcd-efd2-437e-ba8e-1021b43123d3"
         ],
         "settings": {
-          "margin_top": "",
+          "margin_top": "40px",
           "margin_bottom": "0px",
           "padding": "0px 0px 0px 0px",
           "space_item": "0"
@@ -2148,7 +2148,7 @@
               "background_color_hover": "",
               "color_scheme": "dark",
               "color_scheme_hover": "light",
-              "title": "ARRIBA",
+              "title": "",
               "sub_title": "CATEGORIAS",
               "content": "",
               "button_title": "",
@@ -2185,7 +2185,7 @@
           "2f671afb-4377-4c4e-83f0-bb6df37ff09c"
         ],
         "settings": {
-          "margin_top": "",
+          "margin_top": "40px",
           "margin_bottom": "0px",
           "padding": "0px 0px 0px 0px",
           "space_item": "0"
