@@ -42,6 +42,7 @@
       "block_order": [
         "template--16099334389954__f62ce6d6-1fc2-4a7b-8791-51427c673a63-item-block-1"
       ],
+      "disabled": true,
       "settings": {
         "bg_section_color": "#ffffff",
         "margin_top": "",
