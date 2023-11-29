@@ -2300,6 +2300,7 @@
           "fc57a92e-4ee8-4af3-9ad0-8b5307dbecfe": {
             "type": "image",
             "settings": {
+              "banner_image": "shopify:\/\/shop_images\/GIFTCARD.png",
               "banner_link": "shopify:\/\/products\/rebaja-moda-tarjeta-de-regalo",
               "banner_title": "Giftcard Rebaja Moda",
               "banner_content": "Regala una giftcard de Adams y esa persona que quieres podrá comprar lo que ella desee!"
@@ -2340,6 +2341,7 @@
         "block_order": [
           "93eaa374-bbd0-4d0e-b951-02704d81cea9-image-1"
         ],
+        "disabled": true,
         "settings": {
           "margin_top": "",
           "margin_bottom": "",
