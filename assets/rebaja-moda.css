@@ -46,6 +46,10 @@ letter-spacing-2 {
 /**********************************************
                 BANNER PRINCIPAL
 **********************************************/
+banner-contet {
+  height: 330px;
+}
+
 .banner-text {
   font-size: 25px;
   letter-spacing: 4px;
