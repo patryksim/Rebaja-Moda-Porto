@@ -2,6 +2,10 @@
   margin-left: 0.5rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .start-50 {
   left: 50%;
 }
