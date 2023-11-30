@@ -34,9 +34,18 @@
   transform: translateX(-50%);
 }
 
+.text-white {
+  color: white;
+}
+
 /**********************************************
                 BANNER PRINCIPAL
 **********************************************/
+.banner-text {
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
 .btn-main-banner {
   border: 4px solid #FFDA00;
   background-color: transparent;
