@@ -2267,7 +2267,7 @@
               "lazy_back_color": "#eeeeee",
               "show_content": true,
               "link_slider": "shopify:\/\/collections\/todos-los-productos",
-              "content": "<a href=\"\/collections\/todos-los-productos\">\n\t<\/a><div class=\"position-relative w-100\" style=\"height: 330px;\">\n<a href=\"\/collections\/todos-los-productos\">\n\t\t<\/a><div class=\"position-absolute bottom-0 start-50 translate-middle-x\">\n<a href=\"\/collections\/todos-los-productos\">\n\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0559\/7754\/1826\/files\/TITULO.png?v=1701360974\">\n\t\t\t<p class=\"banner-text\">LAS MEJORES MARCAS A UN SOLO CLIK<\/p>\n\t\t\t<\/a><a href=\"\/collections\/todos-los-productos\">\n\t\t\t\t<button class=\"btn-main-banner m-auto\">\n\t\t\t\t\tSHOP NOW\n\t\t\t\t<\/button>\t\t\n\t\t\t<\/a>\n\t\t<\/div>\n\t<\/div>",
+              "content": "<a href=\"\/collections\/todos-los-productos\">\n\t<\/a><div class=\"position-relative w-100\" style=\"height: 330px;\">\n<a href=\"\/collections\/todos-los-productos\">\n\t\t<\/a><div class=\"position-absolute bottom-0 start-50 translate-middle-x\">\n<a href=\"\/collections\/todos-los-productos\">\n\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0559\/7754\/1826\/files\/TITULO.png?v=1701360974\">\n\t\t\t<p class=\"banner-text text-white\">LAS MEJORES MARCAS A UN SOLO CLIK<\/p>\n\t\t\t<\/a><a href=\"\/collections\/todos-los-productos\">\n\t\t\t\t<button class=\"btn-main-banner m-auto\">\n\t\t\t\t\tSHOP NOW\n\t\t\t\t<\/button>\t\t\n\t\t\t<\/a>\n\t\t<\/div>\n\t<\/div>",
               "extra_class": ".content-slideshow{ position: relative}"
             }
           }
