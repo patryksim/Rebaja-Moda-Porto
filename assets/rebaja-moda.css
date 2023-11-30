@@ -3,7 +3,8 @@
 }
 
 .m-auto {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .start-50 {
