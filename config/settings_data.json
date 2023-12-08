@@ -1667,7 +1667,7 @@
           "margin_top": "",
           "margin_bottom": "",
           "section_padding": "0px 0px 0px 0px",
-          "slide_layout": "fullwidth",
+          "slide_layout": "fullscreen",
           "slide_transition": "fade",
           "auto_speed": "",
           "show_paging": false,
@@ -1761,9 +1761,9 @@
           "d3924feb-5fb1-46c6-aeec-a78a2821b3d0"
         ],
         "settings": {
-          "margin_top": "50px",
-          "margin_bottom": "",
-          "section_padding": "",
+          "margin_top": "0px",
+          "margin_bottom": "0px",
+          "section_padding": "20px 0 2px 0",
           "autoplay": "5000",
           "columns": "5",
           "margin": "",
@@ -1844,14 +1844,14 @@
           ".porto-ibanner {border-radius: 10px;}"
         ],
         "settings": {
-          "margin_top": "80px",
-          "margin_bottom": "80px",
-          "section_padding": "",
+          "margin_top": "0px",
+          "margin_bottom": "0px",
+          "section_padding": "100px 0 100px 0",
           "section_background_color": "",
           "el_class": "header-none",
           "section_title": "",
           "banner_space": "30px",
-          "space_banner": "7"
+          "space_banner": "6"
         }
       },
       "b40e7def-636f-4c0d-90f3-760d6d1f6c75": {
@@ -1931,9 +1931,9 @@
           "b40e7def-636f-4c0d-90f3-760d6d1f6c75-16844118593485cef9-0"
         ],
         "settings": {
-          "margin_top": "40px",
+          "margin_top": "0px",
           "margin_bottom": "0px",
-          "padding": "0px 0px 0px 0px",
+          "padding": "50px 0px 0px 0px",
           "space_item": "0"
         }
       },
@@ -1958,8 +1958,8 @@
         ],
         "settings": {
           "margin_top": "0px",
-          "margin_bottom": "",
-          "section_padding": "0 40px 0 40px",
+          "margin_bottom": "0px",
+          "section_padding": "0 0 50px 0",
           "tab_style": "style2",
           "category_list_title": "",
           "view_mode": "products-slider",
@@ -2203,9 +2203,9 @@
           "2f671afb-4377-4c4e-83f0-bb6df37ff09c"
         ],
         "settings": {
-          "margin_top": "",
+          "margin_top": "0px",
           "margin_bottom": "0px",
-          "padding": "0px 0px 0px 0px",
+          "padding": "50px 0px 0px 0px",
           "space_item": "0"
         }
       },
@@ -2314,7 +2314,7 @@
           "fc57a92e-4ee8-4af3-9ad0-8b5307dbecfe"
         ],
         "custom_css": [
-          "@media screen and (min-width: 576px) {.item {width: 45%; margin: auto; }}"
+          "@media screen and (min-width: 576px) {.item {width: 25%; margin: auto; }}"
         ],
         "settings": {
           "bg_section_color": "",
