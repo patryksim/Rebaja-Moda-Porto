@@ -119,7 +119,7 @@ letter-spacing-2 {
   margin-top: 0px !important;
 }
 .main-section-header .header .custom-block {
-  display: none;
+  display: block;
 }
 .header-main {
   display: none;
