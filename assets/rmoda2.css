@@ -121,14 +121,14 @@ letter-spacing-2 {
 .main-section-header .header .custom-block {
   display: none;
 }
-.header-main {
-  display: none;
-}
+
 .main-section-header .header-container,
 .header-container.type9.sticky-header .header-main {
   display: block;
 }
-
+a.logo.porto-main-logo {
+  display: none;
+}
 @media screen and (max-width: 680px) {
   .site-logo img {
     width: 100px !important;
