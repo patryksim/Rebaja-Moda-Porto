@@ -115,7 +115,7 @@
     "header_overlap": false,
     "logo_overlap_svg": "",
     "logo_overlap": "shopify:\/\/shop_images\/white_logo.png",
-    "header_fullwidth": false,
+    "header_fullwidth": true,
     "header_sticky_enable": "enable",
     "header_design": "type26",
     "header_compare_enable": false,
