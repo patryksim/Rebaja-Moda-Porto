@@ -128,7 +128,9 @@ letter-spacing-2 {
 .header-container.type9.sticky-header .header-main {
   display: block;
 }
-
+a.logo.porto-main-logo {
+  display: none;
+}
 @media screen and (max-width: 680px) {
   .site-logo img {
     width: 100px !important;
