@@ -112,7 +112,7 @@
     "logo_sticky_svg": "logo_1.png",
     "logo_sticky": "shopify:\/\/shop_images\/logo_1.png",
     "logo_sticky_width": "150",
-    "header_overlap": true,
+    "header_overlap": false,
     "logo_overlap_svg": "logo_1.png",
     "logo_overlap": "shopify:\/\/shop_images\/white_logo.png",
     "header_fullwidth": false,
