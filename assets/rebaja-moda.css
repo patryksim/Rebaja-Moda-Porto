@@ -124,7 +124,10 @@ letter-spacing-2 {
 .header-main {
   display: none;
 }
-
+.main-section-header .header-container,
+.header-container.type9.sticky-header .header-main {
+  display: block;
+}
 a.logo.porto-main-logo {
   display: none;
 }
