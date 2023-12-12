@@ -105,7 +105,7 @@
     "topbar_background_size": "default",
     "topbar_background_attachment": "default",
     "topbar_background_position": "center_center",
-    "logo_svg": "logo_1.png",
+    "logo_svg": "",
     "logo": "shopify:\/\/shop_images\/logo_1.png",
     "logo_width": "150",
     "show_logo_sticky": true,
