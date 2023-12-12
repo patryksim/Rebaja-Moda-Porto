@@ -119,7 +119,7 @@
     "header_design": "type9",
     "header_compare_enable": false,
     "header_ajax_search": true,
-    "header_search_colletion": false,
+    "header_search_colletion": true,
     "search_box_radius": "0",
     "header_search_background_color": "rgba(0,0,0,0)",
     "header_search_text_color": "#ffffff",
