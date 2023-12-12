@@ -102,7 +102,7 @@
     "topbar_background_color": "#000000",
     "topbar_text_custom_color": "#ffffff",
     "topbar_background_image_repeat": "no-repeat",
-    "topbar_background_size": "cover",
+    "topbar_background_size": "default",
     "topbar_background_attachment": "default",
     "topbar_background_position": "center_center",
     "logo_svg": "logo_1.png",
@@ -2281,7 +2281,7 @@
         ],
         "settings": {
           "margin_top": "0px",
-          "margin_bottom": "",
+          "margin_bottom": "0px",
           "section_padding": "0px 0px 0px 0px",
           "slide_layout": "fullwidth",
           "slide_transition": "slide",
