@@ -7,7 +7,7 @@
     "layout": "1420px",
     "ajax_cart_use": true,
     "scroll_top_use": false,
-    "image_lazyload": true,
+    "image_lazyload": false,
     "login_popup": false,
     "language_enable": false,
     "flag_user_icon": false,
