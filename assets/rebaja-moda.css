@@ -118,7 +118,9 @@ letter-spacing-2 {
 .vc_custom_1569834526979 {
   margin-top: 0px !important;
 }
-
+.main-section-header .header .custom-block {
+  display: none;
+}
 .header-main {
   display: none;
 }
@@ -138,7 +140,6 @@ a.logo.porto-main-logo {
   display: block !important;
   margin-top: 20px !important;
 }
-
 .main-section-header .top-navigation li.level0 ul li a:hover {
   padding-left: 20px;
   color: blue !important;
