@@ -1,0 +1,152 @@
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-50 {
+  left: 50%;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.w-100 {
+  width: 100%;
+} 
+
+.h-100 {
+  height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.translate-middle-x {
+  transform: translateX(-50%);
+}
+
+.text-white {
+  color: white;
+}
+
+letter-spacing-2 {
+  letter-spacing: 0.5rem;
+}
+
+/**********************************************
+                BANNER PRINCIPAL
+**********************************************/
+.banner-contet {
+  height: 330px;
+}
+
+.banner-text {
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+
+.btn-main-banner {
+  border: 4px solid #FFDA00;
+  background-color: transparent;
+  color: #FFDA00;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/**********************************************
+            PLATFORM CUSTOMIZATIONS
+**********************************************/
+.footer-wrapper .social-icons a {
+  font-size: 20px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-right: 10px;
+}
+.offset-lg-1 {
+  margin-left: 0% !important;
+}
+.header-container.type9 .search-area .search-extended {
+  border-radius: 50px;
+  border: 1px solid #fff;
+}
+.footer-middle .info-footer .custom-footer-content ul.footer-list li:before {
+  display: none !important;
+}
+.banner-sub-top {
+  width: 100px !important;
+}
+.main-section-header .top-navigation li.level0 ul li a {
+  padding-left: 20px;
+  color: #000 !important;
+}
+.search-by-category .list-wrapper {
+  background-color: #000;
+}
+.footer-bottom address {
+  margin: 0 0 0 0;
+}
+.gt_switcher_wrapper {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.level0.menu-wrap-sub {
+  width: 600px !important;
+}
+@media screen and (max-width: 660px) {
+  .pushdaddy-button-label {
+    right: inherit;
+    margin: 0 20px !important;
+    font-size: 10px !important;
+  }
+}
+.header-row.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.vc_custom_1569834526979 {
+  margin-top: 0px !important;
+}
+.main-section-header .header .custom-block {
+  display: none;
+}
+.header-main {
+  display: none;
+}
+.main-section-header .header-container,
+.header-container.type9.sticky-header .header-main {
+  display: block;
+}
+a.logo.porto-main-logo {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  .site-logo img {
+    width: 100px !important;
+  }
+}
+.sticky-header .custom-block {
+  display: block !important;
+  margin-top: 20px !important;
+}
+.main-section-header .top-navigation li.level0 ul li a:hover {
+  padding-left: 20px;
+  color: blue !important;
+}
+input.btn-button.bordered.float-right {
+  line-height: 2rem !important;
+}
+.slideshow-section .slideshow .item {
+  min-height: 505px !important;
+}
